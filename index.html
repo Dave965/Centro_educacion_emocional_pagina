@@ -1,0 +1,222 @@
+<!--quienes somos, nuestros programas, eventos-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link  href="https://fonts.googleapis.com/css?
+family=Montserrat" 
+rel="stylesheet" 
+type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Centro de Educacion Emocional</title>
+  <link rel="icon" type="image/x-icon" href="src/Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body onscroll="handleScroll()">
+  <nav>
+    <div class="iconos-redes">
+      <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/profile.php?id=100095243618832"></a>
+      <a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@centroeducacionemocional?_t=8jm6wbT2CkI&_r=1"></a> 
+      <a class="fa-brands fa-instagram" href="https://instagram.com/educacionemocionalgt?igshid=OGQ5ZDc2ODk2ZA=="></a>
+      <a class="fa-regular fa-envelope" href="mailto:info@educacionemocionalgt.com?Subject=Hola%20Mundo"></a>
+      <a class="fa-brands fa-whatsapp" href="https://wa.me/50660962814"></a>
+    </div>
+    <img class="nav-logo" alt="" src="src/Logo.png"/>
+    <div class="nav-menu">
+      <span onclick="cambiar_pagina('pagina-historia'); smoothScroll('section-historia')">Historia</span>
+      <div class="vl"></div>
+      <div class="hover-zone">
+      <span class="primero " onclick="cambiar_pagina('pagina-sobre-nosotros')">Sobre nosotros</span>
+      <div class="drop-menu">
+        <span class="solid-yellow" onclick="cambiar_pagina('pagina-sobre-nosotros'); smoothScroll('section-quienes-somos')">Quienes somos</span>
+        <span class="solid-yellow" onclick="cambiar_pagina('pagina-sobre-nosotros'); smoothScroll('section-equipo')">Nuestro Equipo</span>
+        <span class="solid-yellow" onclick="cambiar_pagina('pagina-sobre-nosotros'); smoothScroll('section-porqueNosotros')">Porque Nosotros</span>
+        <span class="solid-yellow" onclick="cambiar_pagina('pagina-sobre-nosotros'); smoothScroll('como-lo-hacemos')">Como lo Hacemos</span>
+      </div>
+      </div>
+      <div class="vl"></div>
+      <span onclick="cambiar_pagina('pagina-programas'); smoothScroll('section-programas')">Programas</span>
+    </div>
+  </nav>
+
+  <section id="carousel">
+    <div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true, "autoPlay": true, "prevNextButtons": false, "pauseAutoPlayOnHover": false}'>
+      <div class="gallery-cell">
+        <img src="src/car-1.jpeg" />
+      </div>
+      <div class="gallery-cell">
+        <img src="src/car-2.jpeg" />
+      </div>
+      <div class="gallery-cell">
+        <img src="src/car-3.jpeg" />
+      </div>
+      <div class="gallery-cell">
+        <img src="src/car-4.jpeg" />
+      </div>
+      <div class="gallery-cell">
+        <img src="src/car-5.jpeg" />
+      </div>
+      <div class="gallery-cell">
+        <img src="src/car-6.jpeg" />
+      </div>
+    </div>
+  </section>
+
+<div id="pagina-historia" class="hidden">
+
+   <section id="section-historia">
+       <h1 class="titulo" >NUESTROS INICIOS</h1>
+     <p>
+        Nuestra historia comienza con un evento personal que me hizo repensar el valor de <br><span class="realistic-marker-highlight">la vida, las relaciones, la familia, el amor y el bienestar</span>, eso momentos críticos en los que la vida y nosotros mismos nos colocamos, momentos en que debes tomar decisiones porque <span class="circle-sketch-highlight">hay mucho en juego</span>, así fue como inició la búsqueda hacia la felicidad y el  bienestar. En el camino encontré personas maravillosas que me enseñaron que se puede vivir diferente y ser feliz , conocí el mundo del <mark>Coaching Integral</mark>, que me enseñó a hacerme cargo de las situaciones desde el amor propio y la responsabilidad, fueron apareciendo otros <span class="sketch-highlight">aprendizajes, herramientas y metodologías</span> que fortalecieron mi vida personal y laboral.
+    <br>
+    <br>
+    En el año <mark>2018 en Costa Rica</mark>, aparece la iniciativa de compartir con otras personas lo aprendido, surge la necesidad de contarle a los demás que la felicidad existe y está al alcance de todas las personas, es cuando nace <span class="realistic-marker-highlight">Productora SOMOS</span> dedicada a la producción y gestión de servicios educativos y culturales, mediante la utilización de <br><span class="circle-sketch-highlight">diversas técnicas, herramientas y metodologías </span> para el apoyo y acompañamiento de grupos, equipos y personas.</p>
+    <img src="src/historia-1.jpg">
+
+    <p>
+    Hoy, después de <mark>6 años</mark> maravillosos, colmadas de agradecimiento y aprendizaje establecidas en Ciudad Guatemala,  bajo el nombre de <span class="sketch-highlight">Centro de Educación Emocional</span> nos presentamos como una alternativa para impulsar la mejora en la calidad de los procesos formativos de las personas a través de la <span class="circle-sketch-highlight">Educación Emocional.</span> </p>
+    <img src="src/historia-2.jpg">
+
+    <p>
+    Somos un <span class="circle-sketch-highlight">equipo interdisciplinario</span>  especializado para el desarrollo de procesos,  mujeres profesionales  que unen sus esfuerzos y saberes <span class="sketch-highlight">en busca del bienestar</span>  con una<br> <mark>visión inclusiva, oportuna y transparente.</mark>
+    Contamos con alianzas estratégicas en Costa Rica, México y Colombia.</p>
+    <img src="src/historia-3.jpg">
+
+  </section>
+</div>
+
+
+<div id="pagina-sobre-nosotros" class="">
+  <section id="section-quienes-somos">
+    <div class="c-left">
+      <span class="titulo">Quienes Somos</span>
+      <img src="src/Logo.png" class="large-logo">
+    </div >
+    <div class="c-right">
+		
+    <h5>Objetivo</h5>
+    <p>Promover el aprendizaje de competencias socioemocionales para el desarrollo integral de las personas y las organizaciones, mediante el fomento de la Educación Emocional.
+    </p>
+
+    <h5>Mision</h5>
+    <p>Ser un puente entre las personas, las familias, las organizaciones y la comunidad para que la Educación Emocional se implemente y desarrolle de forma real, compasiva y efectiva en los espacios personales y laborales. 
+    </p>
+
+    <h5>Vision</h5>
+    <p>Ser la institución privada que genere las instancias formativas y de acompañamiento, fomentando la educación emocional de las personas y organizacioones, para la construcción de espacios sanos y seguros que favorezcan la transformación integral del ser humano. 
+    </p>
+    <h5>Valores</h5>
+    <p>Amor, Compasión, Compromiso social, Respeto y visión de género
+    </p>
+    
+    </div>
+  </section>
+
+  <section id="section-equipo">
+    <h1 class="titulo" >Nuestro Equipo</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="src/Marta.png">
+        <h3>Marta Medina</h3>
+        <h3 class="slim-bold">Máster Coach Integral</h3>
+        <h3 class="slim-bold">Directora de CEE</h3>
+        <p>
+           Educadora Emocional, Instructora de Mindfulness, Consultora internacional, conferencista y facilitadora y gestora de procesos de capacitación y formación.
+        </p>
+      </div>
+      <div class="card">
+        <img src="src/equipo.png">
+        <h3>Ana María Zeledón</h3>
+        <h3 class="slim-bold">Administradora de empresas</h3>
+        <h3 class="slim-bold">Coordinadora Administrativa</h3>
+        <p>
+           Mercadóloga, Especialista en educación técnica y profesora universitaria.
+        </p>
+      </div>
+      <div class="card">
+        <img src="src/Ale.png">
+        <h3>Ale Ara Medina</h3>
+        <h3 class="slim-bold">Titulo</h3>
+        <h3 class="slim-bold">Coordinadora de gestión</h3>
+        <p>
+           Facilitadora sociocultural y realizadora audiovisual, con formación académica en Ciencias Políticas, Sociología y Teologías Queer y Feministas. Es investigadora y consultora en comunicación política, derechos humanos, feminismo y participación política de jóvenes. 
+      </div>
+      
+      </div>
+    </section>
+      
+    <section id="section-porqueNosotros">
+      <h1 class="titulo" >PORQUE VINCULARSE CON NOSOTROS</h1>
+      <p>El Centro de Educación Emocional es una empresa que pone al servicio de las personas y organizaciones su experiencia y saberes profesionales y de vida, para gestionar procesos de transformación, desde la percepción del Ser, del Hacer y el Tener. Con el Fin de impactar su quehacer persoal y profesional, mediante el uso de metodologías, técnicas y herramientas ágiles y disrruptivasa, los procesos de aprendizaje se desarrollan desde entornos presenciales y virtuales. Contamos con alianzas internacionales con las que obtendrás una perspectiva integral del mundo emocional que existe en el exterior.</p>
+    </section>
+		 
+	<section id="como-lo-hacemos">
+		 <h1 class="titulo">¿CÓMO LO HACEMOS?</h1>
+		<p>Nuestros programas están mediados con la utilización de técnicas, herramientas y metodologías para el apoyo y acompañamiento de grupos, equipos y personas, planteados a través de La Educación Emocional, Coaching de Vida, Coaching Ejecutivo, Coaching de Equipos, Educación Popular, Gamificación, Juego Serio, técnicas de intervención conversacional, lenguaje apreciativo, Aprendizaje experiencial, Neuro Herramientas, Programación Neurolingüística y Mindfulness.
+
+		Se desarrollan en modalidades  presencial, virtual o híbrida.</p>
+		 </section>	 
+</div>
+
+<div id="pagina-programas" class="hidden">
+  <section id="section-programas">
+       <h1 class="titulo">PROGRAMAS</h1>
+       
+       <div class="card-h">
+        <div>
+        <h5>Mindfulness</h5>
+        <p>El Mindfulness es un término relativamente nuevo, nos lleva a tener en cuenta en dónde nos encontramos en cada preciso momento y ser capaces de centrarnos en la actividad que estamos llevando a cabo. Es la capacidad que todas las personas tenemos  de entrenar nuestro cerebro, nuestra atención para que pueda estar en el momento presente, sin juzgar, en un marco de aceptación y compasión.
+    Llevamos esta poderosa práctica al ámbito personal y laboral, mediante programas diseñados de acuerdo a las necesidades de las personas, grupos u organizaciones.
+    Sus beneficios están respaldados por un sin número de estudios científicos que aseguran su efectividad, mediante la práctica sostenida del Mindfulness podemos: reducir la hipertensión, mejorar la creatividad y concentración, control de estrés, obtener una sensación de control, poner las cosas en perspectiva, mejorar niveles de energía, entre muchos otros beneficios.
+    Búscanos y sé protagonista de tu bienestar</p> 
+      
+    <h5>Mindulness en Educación</h5>
+    <p> Dirigido a : Educadores, niños, niñas y adolescentes
+    El Mindfulness se presenta como una estrategia de solución a diversas problemáticas que afectan a los docentes por un lado y a estudiantes por el otro. Algunos de estas problemáticas son la necesidad de incluir herramientas para facilitar el proceso de enseñanza y aprendizaje, reducir el estrés y mejorar el desempeño de los maestros, así como promover el desarrollo socioemocional de los alumnos.
+    Al incorporar las prácticas formales e informales del Mindfulness en el entorno educativo permitirá experimentar bienestar en la práctica docente y por ende puede ayudar a los estudiantes a desarrollar habilidades sociales y emocionales esenciales, fomentando un   ambiente positivo en el aula, así como el bienestar y el éxito en general.</p> 
+      
+      <h5>Educación Emocional</h5>
+        <p>Podemos entender la Educación Emocional como
+    “Aprendizaje vital para el desarrollo integral del ser humano, que busca través del sentir emocional gestionar conscientemente el desarrollo y transformación del bienestar personal y social, en un proceso de crecimiento continuo y sistemático” Canales, 2022
+    Conocer y gestionar nuestras emociones nos permite estar bien con nosotros mismos, ganar autoconocimiento y asentar las bases para el desarrollo de las competencias socio emocionales necesarias. Esto incide positivamente en la  en la forma que tenemos de relacionarnos con la familia, amigos, compañeros de trabajo o pareja.
+    El programa de Educación Emocional se presente como una oportunidad de vida para disfrutar del bienestar, acerté cargo de tu Salud mental  y de la felicidad que mereces, atrévete a encontrarlo dentro de ti.</p>
+       
+       <h5>Coaching</h5>
+       <p>Podemos entender el Coaching (IAC-ICF) como una forma avanzada de comunicación cuyo fin es apoyar a personas, grupos, equipos y organizaciones a producir un resultado deseado, gracias a la co- creación de conciencia y solución de problemas.
+    En el  Centro de Educación Emocional – CEE encontramos en esta disciplina la posibilidad de acompañar a nuestros coachees para que alcancen su  desarrollo en las diferentes facetas de su vida personal y laboral , les permitirá  estar más alerta a los recursos y posibilidades para transformar la realidad que vive, ve y siente.
+      <ul>
+        <li>Coaching de Vida</li>
+        <li>Coaching Ejecutivo</li>
+        <li>Coaching de Equipo</li>
+        <li>Coaching Educativo</li>
+      </ul>
+    </p>
+       
+       <h5>Centros Educativos de Inspiración Socioemocional</h5>
+       <p>Este hermoso programa busca generar un ambiente socio emocional adecuado como parte de la dinámica institucional, en el que los estudiantes y la comunidad educativa  se sientan seguros, valorados y apoyados por un sistema y una organización sana  en la que todas las personas se sienten bien y puedan desempeñarse  eficientemente para el cumplimiento de los objetivos personales y colectivos, convertirse en una organización sana donde todos y todas son y se sienten reconocidos por lo que son.
+       
+    los invitamos a ser parte de este ambicioso proyecto  y transformar su ya exitosa institución  educativa  en un modelo de inspiración socio emocional, para otros centros educativos y  para  la sociedad .
+       
+    Haga parte a su institución educativa de este importante proyecto y sean  protagonistas de la transformación de la sociedad que tanto requiere consciencia emocional y social.</p>
+      </div>
+       </div>
+      </section>
+</div> 
+
+
+
+  <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
